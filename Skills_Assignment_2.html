@@ -46,6 +46,29 @@
 			document.body.style.backgroundColor = colors[1];
 			buttonVal.value == 3;
 		}
+		switch(value){
+			case "0":	
+				document.body.style.backgroundColor = colors[0];
+				buttonVal.value = "1";
+				break;
+			case "1":
+				document.body.style.backgroundColor = colors[1];
+				buttonVal.value = "2";
+				break;
+			case "2":
+				document.body.style.backgroundColor = colors[2];
+				buttonVal.value = "3";
+				break;
+			case "3":
+				document.body.style.backgroundColor = colors[3];
+				buttonVal.value = "0";
+				break;
+			case "4":
+				document.body.style.backgroundColor = colors[4];
+				buttonVal.value = "0";
+				break;
+			default:
+			document.body.style.backgroundColor = "grey";
 	}
 
 	function myFirst() {
