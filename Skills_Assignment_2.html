@@ -1,0 +1,120 @@
+<!doctype html>
+<html land="en">
+<head>
+<meta charset="utf-8">
+<title>pets</title>
+<style>
+	body {background-color:green;}
+	#text {
+	width:860px;
+	margin-left:auto;
+	margin-right: auto;}
+	img{  border:3px solid #000000;  }
+	#top{
+	background-color:#818AA3;
+	width:860px;
+	margin-left:auto;
+	margin-right: auto;}
+
+</style>
+<script>
+	var myFirstVariable="valuehere";
+
+	var myFirstArray=["apple", "orange", "banana"];
+
+	var mySecondArray=[1, 2, 3];
+
+	var myFirstVariable= 8 ;
+
+	var colors = ["#F5F2B8", "grey", "brown", "yellow", "green"];
+
+
+
+	function main() {
+
+		html ="<p>select your pets.</p><img src='pets.jpg'>";
+		document.getElementById("text").innerHTML  = html;
+
+		buttonVal = document.getElementById("quiz");
+		
+		if(buttonVal.value == 0){
+			document.body.style.backgroundColor = colors[0];
+			buttonVal.value == 1;
+			}
+
+		else{
+			document.body.style.backgroundColor = colors[1];
+			buttonVal.value == 3;
+		}
+	}
+
+	function myFirst() {
+
+		html ="<p>The cat is a domestic species of small carnivorous mammal.</p><img src='cat1.jpg'>";
+		document.getElementById("text").innerHTML  = html;
+		buttonVal = document.getElementById("quiz");
+		
+		if(buttonVal.value == 0){
+			document.body.style.backgroundColor = colors[1];
+			buttonVal.value == 1;
+			}
+
+		else{
+			document.body.style.backgroundColor = colors[1];
+			buttonVal.value == 3;
+		}
+	}
+
+	function mySecond() {
+
+		html ="<p>The domestic dog is a wolf-like canid that can be found distributed around the world. </p><img src='dog2.jpg'>";
+		document.getElementById("text").innerHTML  = html;
+		buttonVal = document.getElementById("quiz");
+		
+		if(buttonVal.value == 0){
+			document.body.style.backgroundColor = colors[2];
+			buttonVal.value == 1;
+			}
+
+		else{
+			document.body.style.backgroundColor = colors[1];
+			buttonVal.value == 3;
+		}
+	}
+	function myThird() {
+
+		html ="<p>Parrots, also known as psittacines, are birds of the roughly 398 species in 92 genera comprising the order Psittaciformes, found mostly in tropical and subtropical regions.</p><img src='bird3.png'>";
+		document.getElementById("text").innerHTML  = html;
+		buttonVal = document.getElementById("quiz");
+		
+		if(buttonVal.value == 0){
+			document.body.style.backgroundColor = colors[3];
+			buttonVal.value == 1;
+			}
+
+		else{
+			document.body.style.backgroundColor = colors[1];
+			buttonVal.value == 3;
+		}
+	}
+
+</script>
+</head>
+<body>
+<div id="top">
+	<h1>Pets</h1>
+	<button id="quiz" onclick="main()" value="0">main</button>
+
+	<button id="quiz" onclick="myFirst()" value="0">Cat</button>
+
+	<button id="quiz" onclick="mySecond()" value="0">Dog</button>
+
+	<button id="quiz" onclick="myThird()" value="0">Small Bird-parrot</button>
+	</div>
+<div id="text">
+	<p>select your pets.</p>
+		<img src='pets.jpg'>
+	</div>
+	
+</body>
+</html>
